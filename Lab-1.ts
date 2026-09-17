@@ -541,8 +541,6 @@ const listing0Updated: Listing = {...listing0, isSold: false, currentOwner:"Jane
  */
 //WRITE YOUR CODE BELOW
 
-//console.log(parseInt((listings[2].price).replace("$","").replace(",","")) * 0.2);
-
 function realtorFees(building: Listing) {
   let price = parseInt((building.price).replace("$","").replace(",",""))
   if (price < 450000)
