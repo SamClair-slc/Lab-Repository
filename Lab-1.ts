@@ -10,9 +10,25 @@ interface Listing {
   MLSnumber:string,
   photo:string,
   description:string,
-  propertySummary:string[],
-  propertyType:string,
-  buildingSummary:
+  propertySummary:{
+    propertyType:string,
+    buildingType:string,
+    storeys:string,
+    title:string,
+    builtIn:string,
+    taxes:string,
+    parking:string
+  },
+  buildingSummary: {
+    bedrooms: string,
+    bathrooms: string,
+    buildingFeatures: string[],
+    cooling: string,
+    heating: string,
+    sewer: string,
+    water: string,
+    size: string
+  }
 }
 const listings: Listing[] = [
   {
