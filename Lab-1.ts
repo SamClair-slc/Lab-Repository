@@ -2,7 +2,18 @@
 //Task 1:
 //Create an interface Listing that will represent an object
 //from the listings array below to resolve the type error.
-
+interface Listing {
+  id:string,
+  price:string,
+  address:string,
+  postalCode:string,
+  MLSnumber:string,
+  photo:string,
+  description:string,
+  propertySummary:string[],
+  propertyType:string,
+  buildingSummary:
+}
 const listings: Listing[] = [
   {
     id: "10100",
@@ -481,7 +492,7 @@ const listings: Listing[] = [
  * from the array above
  */
 //WRITE YOUR CODE BELOW
-
+let listing0:Listing = listings[0];
 /**
  * Task-3:
  * Create an object named listing0Updated of type Listing
@@ -511,6 +522,8 @@ const listings: Listing[] = [
  * AND CHECK parseInt() to help changing quantifiable strings to numbers
  */
 //WRITE YOUR CODE BELOW
+
+console.log(parseInt((listings[2].price).replace("$","").replace(",","")) * 0.2);
 
 /**
  * Task-5:
