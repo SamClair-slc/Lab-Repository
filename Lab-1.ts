@@ -539,7 +539,11 @@ const listing0Updated: Listing = {...listing0, isSold: false, currentOwner:"Jane
  */
 //WRITE YOUR CODE BELOW
 
-console.log(parseInt((listings[2].price).replace("$","").replace(",","")) * 0.2);
+//console.log(parseInt((listings[2].price).replace("$","").replace(",","")) * 0.2);
+
+function realtorFees(building: Listing) {
+  console.log(parseInt((building.price).replace("$","").replace(",","")) * 0.2);
+};
 
 /**
  * Task-5:
