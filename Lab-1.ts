@@ -28,7 +28,9 @@ interface Listing {
     sewer: string,
     water: string,
     size: string
-  }
+  },
+  isSold?:boolean,
+  currentOwner?:string
 }
 const listings: Listing[] = [
   {
